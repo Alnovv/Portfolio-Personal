@@ -9,7 +9,7 @@ import nextjs from './assets/logo/footerNextjs.svg'
 const Footer = () => {
   return (
     <>
-    <footer className='flex flex-col justify-center items-center text-white gap-3 bg-[#020611] h-[30vh] mt-[400px] max-lg:h-0 absolute top-[200%] left-[38%] '>
+    <footer className='flex flex-col justify-center items-center text-white gap-3 bg-[#020611]  mt-[400px] max-lg:h-0  '>
         <div className='flex gap-3 justify-center items-center'>
           <span className='max-sm:text-[10px]'>&copy; 2023</span>
             <p className='text-xs max-sm:text-[10px] font-extrabold leading-normal'>MADE WITH</p>
@@ -21,7 +21,7 @@ const Footer = () => {
         </div>
         <div>
           <div className=' text-base mb-5 flex max-sm:flex-col justify-center items-center text-center '>
-            <p className=' max-sm:text-[10px] text-white'>MADE BYE ALAM RANOV. DESAIN BY YOPY RINALDY (YORI).</p> 
+            <p className=' max-sm:text-[10px] text-white'>MADE BY ALAM RANOV. DESAIN BY YOPY RINALDY (YORI).</p> 
             
           </div>
        

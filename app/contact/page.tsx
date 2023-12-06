@@ -9,6 +9,15 @@ import WaAndEmail from "./waAndEmail";
 const Contact = () => {
   return (
     <div>
+      <div className=" absolute h-screen -z-10">
+          <div className="absolute top-0 left-0 w-full h-full z-10 bg-gradient-to-t from-transparent via-transparent to-[#020611]"></div>
+          <Image
+            src={page}
+            alt=""
+            className="w-full h-full object-cover -z-20"
+          />
+          <div className="absolute top-0 left-0 w-full h-full z-10 bg-gradient-to-b from-transparent via-transparent to-[#020611]"></div>
+        </div>
       <section className=" flex flex-col justify-center items-center text-white gap-20 max-sm:ml-5 ">
         <div className="flex flex-col justify-center items-start">
           <div>
@@ -27,15 +36,7 @@ const Contact = () => {
           <Form />
           <WaAndEmail />
         </div>
-        <div className=" absolute h-screen -z-10">
-          <div className="absolute top-0 left-0 w-full h-full z-10 bg-gradient-to-t from-transparent via-transparent to-[#020611]"></div>
-          <Image
-            src={page}
-            alt=""
-            className="w-full h-full object-cover -z-20"
-          />
-          <div className="absolute top-0 left-0 w-full h-full z-10 bg-gradient-to-b from-transparent via-transparent to-[#020611]"></div>
-        </div>
+        
       </section>
       <Footer />
     </div>

@@ -66,7 +66,7 @@ const Profile = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 2 }}
             >
-              <h2 className=" text-4xl font-extrabold text-[#FFA666] mb-1 max-2xl:text-3xl max-lg:text-2xl max-sm:text-base">
+              <h2 className=" text-4xl font-extrabold text-[#FFA666] mb-1 max-2xl:text-3xl max-lg:text-2xl max-sm:text-base  max-sm:mt-10">
                 ALAM RANOV GEBY PRIMA
               </h2>
               <h1 className="text-[64px] font-semibold max-2xl:text-3xl max-lg:text-2xl max-sm:text-xl">
@@ -148,7 +148,7 @@ const Profile = () => {
       <TechStack />
 
       <SosialMedia />
-      <div className=" absolute w-[100%] -z-10">
+      <div className=" absolute w-full -z-10 top-[100%] max-sm:hidden">
           <div className="absolute top-0 left-0 w-full h-full z-10 bg-gradient-to-t from-transparent via-transparent to-[#020611]"></div>
           <Image
             src={Page}
