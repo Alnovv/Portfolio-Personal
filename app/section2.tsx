@@ -38,7 +38,7 @@ const Section2 = () => {
           </p>
           <motion.div
           className="text-2xl font-extrabold leading-normal bg-[#FD9A3E] py-[15px] px-[30px] rounded-2xl mt-9  
-          hover:bg-[#FDB13E] transition-all duration-300 w-60 max-sm:text-[10px] max-sm:py-[10px] max-sm:px-[25px] max-sm:rounded-lg
+          hover:bg-[#FDB13E] transition-all duration-300 w-60 max-sm:text-[10px] max-sm:py-[10px] max-sm:px-[35px] max-sm:rounded-lg
           max-2xl:text-xs max-2xl:w-36 max-2xl:rounded-xl"
           whileFocus={{ backgroundColor: "#FD9A3E" }}
           whileHover={{ backgroundColor: "#FDB13E" }}
@@ -49,8 +49,8 @@ const Section2 = () => {
           viewport={{
             once: true,
           }}
-        >
-          <Link href="/profile">Tentang Saya</Link>
+        ><button><Link href="/profile">Tentang Saya</Link></button>
+          
         </motion.div>
         </div>
       </motion.div>

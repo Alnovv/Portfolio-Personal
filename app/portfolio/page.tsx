@@ -22,25 +22,25 @@ const Portfolio = () => {
         className={`flex flex-col justify-around items-center  text-white min-h-screen`}
       >
         <div>
-          <motion.div className="absolute left-0">
-            <Image src={Ellips} alt="" className="w-[50vw] -z-20" />
+          <motion.div className="absolute left-0 max-sm:top-[25%]">
+            <Image src={Ellips} alt="" className="w-[50vw] -z-20 " />
           </motion.div>
-          <div className="absolute left-0 top-3/4 ">
+          <div className="absolute left-0 top-3/4 max-sm:top-[25%]">
             <Image src={Ellips} alt="" className="w-[50vw] -z-20" />
           </div>
-          <div className="absolute right-0 top-2/4 ">
+          <div className="absolute right-0 top-2/4 max-sm:top-[20%] ">
             <Image src={Vector2} alt="" className="w-[80vw] -z-20" />
           </div>
-          <div className="absolute right-0 top-0 ">
+          <div className="absolute right-0 top-0 max-sm:top-[20%] ">
             <Image src={Vector} alt="" className="w-[100vw] -z-20" />
           </div>
           <div>
             <div className="z-50  max-sm:mb-14">
-              <h1 className="text-8xl max-2xl:text-6xl max-sm:text-3xl font-extrabold ">
+              <h1 className="text-8xl max-2xl:text-6xl max-sm:text-5xl font-extrabold ">
                 Pro<span className=" absolute z-20 ">j</span> ects
               </h1>
               <div
-                className={`h-[8px] max-sm:h-1 bg-[#FD9A3E] ${styles.animateprojects} `}
+                className={`h-[8px] max-sm:h-[3px] bg-[#FD9A3E] ${styles.animateprojects} `}
               ></div>
             </div>
           </div>

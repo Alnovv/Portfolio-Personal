@@ -9,7 +9,7 @@ import WaAndEmail from "./waAndEmail";
 const Contact = () => {
   return (
     <div>
-      <div className=" absolute h-screen -z-10">
+      <div className=" absolute h-screen -z-10 max-sm:hidden">
           <div className="absolute top-0 left-0 w-full h-full z-10 bg-gradient-to-t from-transparent via-transparent to-[#020611]"></div>
           <Image
             src={page}
@@ -28,7 +28,7 @@ const Contact = () => {
               className={`h-[8px] max-sm:h-1 bg-[#FD9A3E] ${styles.animateabout}`}
             ></div>
           </div>
-          <p className="text-2xl max-sm:text-xl font-normal leading-normal">
+          <p className="text-2xl max-sm:text-[12px] font-normal leading-normal">
             Jika Anda ingin bekerja bersama
           </p>
         </div>
