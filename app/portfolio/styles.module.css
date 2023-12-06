@@ -1,0 +1,24 @@
+.backgroundImage {
+    background-image: linear-gradient(171deg, #010611 24.67%, rgba(1, 5, 17, 0.57) 53.05%);
+  }
+
+  @keyframes about {
+    0%,100% {
+      width: 15%;
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+    50% {
+      width: 15%;
+      transform: scaleX(7);
+    }
+    80% {
+      width: 15%; 
+      transform: scaleX(8);
+    }
+  }
+  
+  
+.animateprojects {
+    animation: about 2s linear infinite; 
+  }
