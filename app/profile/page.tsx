@@ -148,16 +148,15 @@ const Profile = () => {
       <TechStack />
 
       <SosialMedia />
-      <div
-        style={{
-          background: `linear-gradient(180deg, rgba(1, 5, 17, 0.08) 9.6%, #010511 95.29%), url(${Page.src}) no-repeat`,
-          width: "100vw",
-          height: "100vh",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-        }}
-        className="absolute top-[120%] max-lg:top-[60%] bg-no-repeat bg-cover bg-center -z-20 max-sm:hidden "
-      ></div>
+      <div className=" absolute w-[100%] -z-10">
+          <div className="absolute top-0 left-0 w-full h-full z-10 bg-gradient-to-t from-transparent via-transparent to-[#020611]"></div>
+          <Image
+            src={Page}
+            alt=""
+            className="w-full h-full object-cover -z-20"
+          />
+          <div className="absolute top-0 left-0 w-full h-full z-10 bg-gradient-to-b from-transparent via-transparent to-[#020611]"></div>
+        </div>
       <Footer />
     </>
   );

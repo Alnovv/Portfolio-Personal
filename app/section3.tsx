@@ -10,7 +10,7 @@ import todolist from "./assets/images/Todolist.png";
 import Link from "next/link";
 Link;
 import { motion } from "framer-motion";
-import { once } from "events";
+
 
 const Section3 = () => {
   const [isHovered, setIsHovered] = useState(false);
