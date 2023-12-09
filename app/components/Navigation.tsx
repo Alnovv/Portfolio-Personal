@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import Link from "next/link";
 import Transition from './transition';
 Link;
+
 const Navigation = () => {
     const [isRouting,setIsRouting] = useState(false)
     const path =  usePathname()
@@ -24,9 +25,16 @@ const Navigation = () => {
     },[isRouting,path])
     const [active,setActive] = useState(0)
 
-    const handleSetActive = (index:any) => {
-      setActive(index);
-    };
+    // const handleSetActive = (index:any) => {
+    //   setActive(index);
+    // };
+    useEffect(() => {
+      const paths = ['/', '/profile', '/portfolio', '/contact'];
+      const index = paths.findIndex((p) => p === path);
+      if (index !== -1) {
+        setActive(index);
+      }
+    }, [path]);
 
   return (
     <header className="sticky top-0 z-50  max-sm:flex max-sm:justify-center">
@@ -36,7 +44,7 @@ const Navigation = () => {
             <Link
               href="/" 
               className={`ml-3 cursor-pointer hover:text-[#FD9A3E] transition-all duration-300 ${active === 0 ? 'text-[#FD9A3E] ' : ''}`}
-              onClick={() => handleSetActive(0)}
+              onClick={() => setActive(0)}
             >
               <li>Home</li>{" "}
             </Link>
@@ -44,21 +52,21 @@ const Navigation = () => {
               href="/profile" 
               className={`ml-3 cursor-pointer hover:text-[#FD9A3E] transition-all duration-300 ${active === 1 ? 'text-[#FD9A3E] ' : ''}`}
 
-              onClick={() => handleSetActive(1)}
+              onClick={() => setActive(1)}
             >
               <li>Profile </li>{" "}
             </Link>
             <Link
               href="/portfolio" 
               className={`ml-3 cursor-pointer hover:text-[#FD9A3E] transition-all duration-300 ${active === 2 ? 'text-[#FD9A3E]' : ''}`}
-              onClick={() => handleSetActive(2)}
+              onClick={() => setActive(2)}
             >
               <li>Portfolio</li>{" "}
             </Link>
             <Link
               href="/contact" 
               className={`mr-3 cursor-pointer hover:text-[#FD9A3E] transition-all duration-300 ${active === 3 ? 'text-[#FD9A3E]' : ''}`}
-              onClick={() => handleSetActive(3)}
+              onClick={() => setActive(3)}
             >
               <li>Contact </li>{" "}
             </Link>
