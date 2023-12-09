@@ -38,9 +38,9 @@ function section1() {
         />
       </div>
       <div>
-        <div className="flex flex-col justify-center items-center z-10  ">
+        <div className="flex flex-col justify-center items-center z-10 max-sm:ml-40 max-[414px]:ml-20">
           <motion.h1
-            className="text-[64px] max-2xl:text-5xl text-center max-sm:text-start max-sm:text-[22px]"
+            className="text-[64px] max-2xl:text-5xl text-center max-sm:text-[32px] max-[414px]:text-xl"
             initial={{ opacity: -100, y: -100 }}
             whileInView={{ opacity: 1, y: 1 }}
             transition={{
@@ -52,25 +52,42 @@ function section1() {
               once: true,
             }}
           >
-            <span className="text-xl text-[#FD9A3E] max-sm:text-xs">
+            <span className="text-xl text-[#FD9A3E] max-sm:text-xs ">
               HALLO, SAYA
             </span>{" "}
             RANOV
             <br />
-            <span>
-              <Typewriter
-                options={{
-                  strings: ["FRONT-END DEVELOPER"],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
-            </span>
           </motion.h1>
         </div>
       </div>
+      <div>
+        <motion.h1
+          className="text-[64px] max-2xl:text-5xl text-center max-sm:text-[32px] max-sm:ml-20 max-[414px]:text-xl max-[414px]:ml-7"
+          initial={{ opacity: -100, y: -100 }}
+          whileInView={{ opacity: 1, y: 1 }}
+          transition={{
+            duration: 0.8,
+            delay: 1,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+          viewport={{
+            once: true,
+          }}
+        >
+          <span className="">
+            <Typewriter
+              options={{
+                strings: ["FRONT-END DEVELOPER"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </span>
+        </motion.h1>
+      </div>
+
       <motion.div
-        className="flex justify-start items-center gap-5 mt-5 max-sm:gap-3"
+        className="flex justify-start items-center gap-5 mt-5 max-sm:gap-3 max-sm:ml-40 max-sm:mb-40 max-[414px]:ml-10 "
         initial={{ opacity: -100 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 1.5, ease: [0, 0.71, 0.2, 1.01] }}
@@ -82,9 +99,11 @@ function section1() {
           download="resume"
           href="file/CV.pdf"
           className="text-2xl font-extrabold leading-normal bg-[#FD9A3E] py-[15px] px-[20px] rounded-2xl hover:bg-[#FDB13E] transition-all duration-300 cursor-pointer
-          max-sm:text-[8px] max-2xl:text-xs max-2xl:rounded-xl max-sm:rounded-lg max-sm:py-[10px] max-sm:px-[15px]"
+          max-sm:text-[8px] max-2xl:text-xs max-2xl:rounded-xl max-sm:rounded-xl max-sm:py-[15px] max-sm:px-[20px]"
         >
-          DOWNLOAD CV
+          <p className="max-sm:text-[12px] max-[414px]:text-[12px]">
+            DOWNLOAD CV
+          </p>
         </motion.a>
         <div className="flex gap-5 justify-center items-center max-sm:gap-3">
           <motion.div
@@ -92,11 +111,11 @@ function section1() {
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
-            <a href="https://github.com/Alnovv">
+            <a href="https://github.com/Alnovv" target="_blank">
               <Image
                 src={github}
                 alt=""
-                className={` text-white w-[47px] max-2xl:w-[37px] max-sm:w-[25px] rounded-full`}
+                className={` text-white w-[47px] max-2xl:w-[37px] max-sm:w-[37px] rounded-full`}
               />
             </a>
           </motion.div>
@@ -105,11 +124,14 @@ function section1() {
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
-            <a href="https://www.linkedin.com/in/alam-ranov-71a82a2a1/">
+            <a
+              href="https://www.linkedin.com/in/alam-ranov-71a82a2a1/"
+              target="_blank"
+            >
               <Image
                 src={Linkedin}
                 alt=""
-                className={`bg-white border-[5px] w-[47px] max-2xl:w-[37px] max-sm:w-[25px] rounded-full`}
+                className={`bg-white border-[5px] w-[47px] max-2xl:w-[37px] max-sm:w-[37px] rounded-full`}
               />
             </a>
           </motion.div>

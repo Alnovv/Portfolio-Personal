@@ -4,13 +4,11 @@ import Image from "next/image";
 import DisneyClone from "./assets/images/DisneyClone.png";
 import WebShop from "./assets/images/WebShop.png";
 import todolist from "./assets/images/Todolist.png";
-
-
+import visit from "./assets/images/Link.svg";
 
 import Link from "next/link";
 Link;
 import { motion } from "framer-motion";
-
 
 const Section3 = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -64,16 +62,16 @@ const Section3 = () => {
       y: 0,
     },
   };
-  const hidden ={
-    initial:{ 
-      opacity:-100,
-      y:-100
+  const hidden = {
+    initial: {
+      opacity: -100,
+      y: -100,
     },
-    animate:{
-      opacity:1,
-      y:0
-    }
-  }
+    animate: {
+      opacity: 1,
+      y: 0,
+    },
+  };
 
   const shadowStyle2 = {
     filter: isHovered2
@@ -86,12 +84,12 @@ const Section3 = () => {
       <motion.div
         className="h-[10vh] mt-10"
         variants={hidden}
-        initial='initial'
-        whileInView='animate'
+        initial="initial"
+        whileInView="animate"
         transition={{ duration: 0.5 }}
         viewport={{
-        once:true
-        }}  
+          once: true,
+        }}
       >
         <h1 className="text-4xl leading-normal font-semibold max-sm:text-2xl">
           <span className="text-[#FD9A3E]">Highlight</span> Projects
@@ -112,22 +110,27 @@ const Section3 = () => {
         >
           <div className="px-5 py-3 ">
             <div className="gap-4">
-              <a href="https://ecommerce-shop-khaki-nine.vercel.app">
-                <motion.div className="flex justify-self-center items-center"
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
+              <Image
+                src={WebShop}
+                alt=""
+                className="w-[500px] max-sm:w-[600px]  h-auto rounded-xl cursor-pointer"
+              />
+
+              <div className="flex justify-between items-center">
+                <h1 className="text-xl mt-4 font-extrabold  ">Web-Shop</h1>
+                <motion.button
+                  whileHover={{ scale: 0.9 }}
+                  whileTap={{ scale: 0.7 }}
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 >
-                  <Image
-                    src={WebShop}
-                    alt=""
-                    className="w-[500px]  h-auto rounded-xl cursor-pointer"
-                  />
-                </motion.div>
-              </a>
-              <h1 className="text-xl mt-4 font-extrabold  ">
-                Web-Shop
-              </h1>
+                  <a
+                    href="https://ecommerce-shop-khaki-nine.vercel.app"
+                    target="_blank"
+                  >
+                    <Image src={visit} alt="" className="w-[30px] " />
+                  </a>
+                </motion.button>
+              </div>
             </div>
             <div className="flex gap-2 mt-1 ">
               <p className=" text-xs font-extrabold leading-normal bg-[#FD9A3E] py-1 px-3 rounded-[5px] ">
@@ -141,10 +144,14 @@ const Section3 = () => {
               </p>
             </div>
             <div className="mt-4">
-              <p className="max-2xl:text-[11px] max-sm:text-[9px]">
-              Saya membuat web-shop dengan menggunakan API Fakestore <br />  sebagai sumber data produk. 
-              Situs ini dibuat untuk menunjukkan <br />kemampuan  dalam pengembangan web dan integrasi dengan API. 
-              <br />Web-shop ini  menyediakan katalog produk berdasarkan data dari <br /> API Fakestore.
+              <p className="max-2xl:text-[11px]  max-xl:text-base max-sm:text-base  ">
+                Saya membuat web-shop dengan menggunakan API Fakestore <br />{" "}
+                sebagai sumber data produk. Situs ini dibuat untuk menunjukkan{" "}
+                <br />
+                kemampuan dalam pengembangan web dan integrasi dengan API.
+                <br />
+                Web-shop ini menyediakan katalog produk berdasarkan data dari{" "}
+                <br /> API Fakestore.
               </p>
             </div>
           </div>
@@ -154,7 +161,7 @@ const Section3 = () => {
           variants={variants}
           initial="initial"
           whileInView="animate"
-          transition={{delay:0.05}}
+          transition={{ delay: 0.05 }}
           viewport={{
             once: true,
           }}
@@ -164,21 +171,27 @@ const Section3 = () => {
         >
           <div className="px-5 py-3 ">
             <div className="gap-4 ">
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                transition={{ type: "spring", stiffness: 400, damping: 17 }}
-              ><a href="https://disney-clone-ten-mocha.vercel.app/">
-                <Image
-                  src={DisneyClone}
-                  alt=""
-                  className="w-[500px] h-auto rounded-xl cursor-pointer"
-                />
-              </a>
-              </motion.div>
-              <h1 className="text-xl mt-4 font-extrabold ">
-                DisneyClone
-              </h1>
+              <Image
+                src={DisneyClone}
+                alt=""
+                className="w-[500px] max-sm:w-[600px] h-auto rounded-xl cursor-pointer"
+              />
+
+              <div className="flex justify-between items-center">
+                <h1 className="text-xl mt-4 font-extrabold ">DisneyClone</h1>
+                <motion.button
+                  whileHover={{ scale: 0.9 }}
+                  whileTap={{ scale: 0.7 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                >
+                  <a
+                    href="https://disney-clone-ten-mocha.vercel.app/"
+                    target="_blank"
+                  >
+                    <Image src={visit} alt="" className="w-[30px] " />
+                  </a>
+                </motion.button>
+              </div>
             </div>
             <div className="flex gap-2 mt-1 ">
               <p className=" text-xs font-extrabold leading-normal bg-[#FD9A3E] py-1 px-3 rounded-[5px] ">
@@ -192,21 +205,21 @@ const Section3 = () => {
               </p>
             </div>
             <div className="mt-4">
-              <p className="max-2xl:text-xs max-sm:text-[9px]">
-              Sebuah website cloningan yang menampilkan informasi film dan<br /> konten 
-              terkait dengan menggunakan 
-              <br />API The Movie Database (TMDb) sebagai sumber data.
+              <p className="max-2xl:text-xs max-xl:text-base max-sm:text-base">
+                Sebuah website cloningan yang menampilkan informasi film dan
+                <br /> konten terkait dengan menggunakan API The Movie Database{" "}
+                <br />
+                (TMDb) sebagai sumber data.
               </p>
             </div>
           </div>
-          
         </motion.div>
         <motion.div
           className="bg-[#020611] border-[2px] rounded-[20px]  p-5 max-2xl:p-3"
           variants={variants}
           initial="initial"
           whileInView="animate"
-          transition={{delay:0.05}}
+          transition={{ delay: 0.05 }}
           viewport={{
             once: true,
           }}
@@ -214,60 +227,68 @@ const Section3 = () => {
           onMouseOver={handleHover3}
           onMouseOut={handleMouseOut3}
         >
-          <div className="px-5 py-3 ">
-            <div className="gap-4 ">
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                transition={{ type: "spring", stiffness: 400, damping: 17 }}
-              >
-                <a href="https://todolist-brown-omega.vercel.app/">
-                  <Image
+          <div className="flex">
+            <div className="px-5 py-3 ">
+              <div className="gap-4 ">
+                <Image
                   src={todolist}
                   alt=""
-                  className="w-[540px] h-auto rounded-xl cursor-pointer"
+                  className="w-[540px] max-sm:w-[600px] h-auto rounded-xl cursor-pointer"
                 />
-                </a>
-                
-              </motion.div>
-              <h1 className="text-xl mt-4 font-extrabold ">
-                Todolist
-              </h1>
-            </div>
-            <div className="flex gap-2 mt-1 ">
-              <p className=" text-xs font-extrabold leading-normal bg-[#FD9A3E] py-1 px-3 rounded-[5px] ">
-                HTML
-              </p>
-              <p className=" text-xs font-extrabold leading-normal bg-[#FD9A3E] py-1 px-3 rounded-[5px] ">
-                CSS
-              </p>
-              <p className=" text-xs font-extrabold leading-normal bg-[#FD9A3E] py-1 px-3 rounded-[5px] ">
-                Javascript
-              </p>
-            </div>
-            <div className="mt-4">
-              <p className="max-2xl:text-xs">
-              aplikasi web To-do List sederhana untuk mengelola daftar tugas, 
-              <br />dengan fitur menambahkan tugas, menghapus dan menandai <br /> tugas-tugas  yang selesai dikerjakan.
-              </p>
+
+                <div className="flex justify-between items-center">
+                  <h1 className="text-xl mt-4 font-extrabold ">Todolist</h1>
+                  <motion.button
+                    whileHover={{ scale: 0.9 }}
+                    whileTap={{ scale: 0.7 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                  >
+                    <a
+                      href="https://todolist-brown-omega.vercel.app/"
+                      target="_blank"
+                    >
+                      <Image src={visit} alt="" className="w-[30px] " />
+                    </a>
+                  </motion.button>
+                </div>
+              </div>
+              <div className="flex gap-2 mt-1 ">
+                <p className=" text-xs font-extrabold leading-normal bg-[#FD9A3E] py-1 px-3 rounded-[5px] ">
+                  HTML
+                </p>
+                <p className=" text-xs font-extrabold leading-normal bg-[#FD9A3E] py-1 px-3 rounded-[5px] ">
+                  CSS
+                </p>
+                <p className=" text-xs font-extrabold leading-normal bg-[#FD9A3E] py-1 px-3 rounded-[5px] ">
+                  Javascript
+                </p>
+              </div>
+              <div className="mt-4">
+                <p className="max-2xl:text-xs max-xl:text-base">
+                  aplikasi web To-do List sederhana untuk mengelola daftar
+                  tugas,
+                  <br />
+                  dengan fitur menambahkan tugas, menghapus dan menandai <br />{" "}
+                  tugas-tugas yang selesai dikerjakan.
+                </p>
+              </div>
             </div>
           </div>
-          
         </motion.div>
       </div>
       <motion.div
         className="text-2xl font-extrabold mt-9 leading-normal bg-[#FD9A3E] py-[15px] px-[20px] rounded-2xl  
-        hover:bg-[#FDB13E] transition-all duration-300 max-sm:py-[10px] max-sm:px-[15px] max-sm:text-[10px] max-sm:rounded-lg
-        max-2xl:text-xl"
+        hover:bg-[#FDB13E] transition-all duration-300 max-sm:py-[10px] max-sm:px-[15px] max-sm:text-[10px] max-sm:rounded-xl
+        max-2xl:text-xl max-sm:text-xs max-[414px]:text-xl"
         whileFocus={{ backgroundColor: "#FD9A3E" }}
         whileHover={{ backgroundColor: "#FDB13E" }}
         whileTap={{ backgroundColor: "#FFE8C5" }}
-        initial={{opacity: -100}}
-        whileInView={{opacity:1}}
+        initial={{ opacity: -100 }}
+        whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
         viewport={{
-        once:true
-        }} 
+          once: true,
+        }}
       >
         <Link href="/portfolio">Proyek Lainnya</Link>
       </motion.div>

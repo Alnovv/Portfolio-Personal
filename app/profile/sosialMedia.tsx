@@ -56,7 +56,7 @@ const SosialMedia = () => {
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
-            <motion.a href="https://www.linkedin.com/in/alam-ranov-71a82a2a1/"
+            <motion.a href="https://www.linkedin.com/in/alam-ranov-71a82a2a1/" target="_blank"
             variants={variants}
             initial="initial"
             whileInView="animate"
@@ -79,7 +79,7 @@ const SosialMedia = () => {
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
-            <motion.a href="https://instagram.com/alamranov?igshid=NzZlODBkYWE4Ng=="
+            <motion.a href="https://instagram.com/alamranov?igshid=NzZlODBkYWE4Ng==" target="_blank"
             variants={variants}
             initial="initial"
             whileInView="animate"
@@ -96,7 +96,7 @@ const SosialMedia = () => {
           whileTap={{ scale: 0.9 }}
           transition={{ type: "spring", stiffness: 400, damping: 17 }}>
             <motion.a
-              href="https://www.facebook.com/yorn.omega"
+              href="https://www.facebook.com/yorn.omega" target="_blank"
               variants={variants}
               initial="initial"
               whileInView="animate"

@@ -37,8 +37,8 @@ const Section2 = () => {
             Membuat bisnis web Anda lebih fungsional
           </p>
           <motion.div
-          className="text-2xl font-extrabold leading-normal bg-[#FD9A3E] py-[15px] px-[30px] rounded-2xl mt-9  
-          hover:bg-[#FDB13E] transition-all duration-300 w-60 max-sm:text-[10px] max-sm:py-[10px] max-sm:px-[35px] max-sm:rounded-lg
+          className="text-2xl font-extrabold leading-normal bg-[#FD9A3E] py-[15px] px-[30px] rounded-2xl mt-9  max-sm:text-[14px]
+          hover:bg-[#FDB13E] transition-all duration-300 w-60  max-sm:py-[15px] max-sm:px-[35px] max-sm:rounded-xl max-sm:w-[170px]
           max-2xl:text-xs max-2xl:w-36 max-2xl:rounded-xl"
           whileFocus={{ backgroundColor: "#FD9A3E" }}
           whileHover={{ backgroundColor: "#FDB13E" }}
@@ -49,7 +49,7 @@ const Section2 = () => {
           viewport={{
             once: true,
           }}
-        ><button><Link href="/profile">Tentang Saya</Link></button>
+        ><button><Link href="/profile"><p>Tentang Saya</p></Link></button>
           
         </motion.div>
         </div>

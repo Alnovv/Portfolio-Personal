@@ -108,7 +108,8 @@ const Profile = () => {
                 whileFocus={{ backgroundColor: "#FD9A3E" }}
                 whileHover={{ backgroundColor: "#FDB13E" }}
                 whileTap={{ backgroundColor: "#FFE8C5" }}
-                className="text-2xl font-extrabold leading-normal bg-[#FD9A3E] py-[15px] px-[20px] rounded-2xl hover:bg-[#FDB13E] transition-all duration-300 cursor-pointer max-2xl:text-xs max-2xl:rounded-xl max-sm:text-[8px] max-sm:rounded-lg max-sm:py-[10px] max-sm:px-[15px]"
+                className="text-2xl font-extrabold leading-normal bg-[#FD9A3E] py-[15px] px-[20px] rounded-2xl hover:bg-[#FDB13E] transition-all duration-300 cursor-pointer max-2xl:text-xs max-2xl:rounded-xl 
+                max-sm:text-xs max-sm:rounded-xl max-sm:py-[15px] max-sm:px-[25px]"
               >
                 DOWNLOAD CV
               </motion.a>
@@ -118,11 +119,11 @@ const Profile = () => {
                   whileTap={{ scale: 0.9 }}
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 >
-                  <a href="https://github.com/Alnovv">
+                  <a href="https://github.com/Alnovv" target="_blank">
                     <Image
                       src={github}
                       alt=""
-                      className={` text-white w-[47px] max-2xl:w-[37px] max-sm:w-[25px] rounded-full`}
+                      className={` text-white w-[47px] max-2xl:w-[37px] max-sm:w-[37px] rounded-full`}
                     />
                   </a>
                 </motion.div>
@@ -131,11 +132,11 @@ const Profile = () => {
                   whileTap={{ scale: 0.9 }}
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 >
-                  <a href="https://www.linkedin.com/in/alam-ranov-71a82a2a1/">
+                  <a href="https://www.linkedin.com/in/alam-ranov-71a82a2a1/" target="_blank">
                     <Image
                       src={Linkedin}
                       alt=""
-                      className={`bg-white border-[5px] w-[47px] max-2xl:w-[37px] max-sm:w-[25px] rounded-full`}
+                      className={`bg-white border-[5px] w-[47px] max-2xl:w-[37px] max-sm:w-[37px] rounded-full`}
                     />
                   </a>
                 </motion.div>
