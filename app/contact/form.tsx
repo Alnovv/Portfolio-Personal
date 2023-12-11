@@ -54,7 +54,7 @@ const Form: NextPage = () => {
       <div>
         <form
           action=""
-          className="bg-[#27272a] border-2 rounded-lg px-10 py-14 max-sm:mr-7"
+          className="bg-[#151516] border-2 rounded-lg px-10 py-14 max-sm:mr-7"
           onSubmit={handleSubmit}
         >
           <div >
