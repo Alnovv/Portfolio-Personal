@@ -57,6 +57,7 @@ const Form: NextPage = () => {
           className="bg-[#27272a] border-2 rounded-lg px-10 py-14"
           onSubmit={handleSubmit}
         >
+          <div >
           <div className="relative z-0 ">
             <input
               type="text"
@@ -119,12 +120,14 @@ const Form: NextPage = () => {
               Message
             </label>
           </div>
+          </div>
+          
           <motion.button
             whileFocus={{ backgroundColor: "#FD9A3E" }}
             whileHover={{ backgroundColor: "#FDB13E" }}
             whileTap={{ backgroundColor: "#FFE8C5" }}
             className="flex justify-center items-center gap-3 rounded-2xl bg-[#FD9A3E] py-[10px] px-[25px]
-            text-xl font-bold leading-normal max-2xl:text-xs max-2xl:px-[25px] max-2xl:rounded-xl"
+            text-xl font-bold leading-normal max-2xl:text-xs max-2xl:px-[25px] max-2xl:rounded-xl ml-20"
           >
             Submit
             <Toaster />
