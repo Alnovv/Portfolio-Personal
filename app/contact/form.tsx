@@ -4,14 +4,11 @@ import { NextPage } from "next";
 import { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import { toast, Toaster } from "react-hot-toast";
-import styles from "./styles.module.css";
-import { TiMail } from "@k8pai/tailwind-inputs";
 
 const Form: NextPage = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -55,85 +52,86 @@ const Form: NextPage = () => {
         <br /> kode QR atau pesan di bawah ini.
       </p>
       <div>
-      <form action="" className="" onSubmit={handleSubmit}>
-        <div className="relative z-0 ">
-          <input
-            type="text"
-            id="standard_success"
-            aria-describedby="standard_success_help"
-            className="block py-2.5 px-0 w-[300px] text-sm text-white bg-transparent border-0 
-            border-b-2  appearance-none dark:text-white dark:border-[#FD9A3E] border-[#FD9A3E]
-           dark:focus:border-[#FD9A3E] focus:outline-none focus:ring-0 focus:border-[#FD9A3E] peer"
-            placeholder=" "
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-          <label
-            htmlFor="standard_success"
-            className="absolute text-sm  text-[#FD9A3E] dark:text-[#FD9A3E] duration-300 transform 
-            -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 
-            peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto"
-          >
-            Name
-          </label>
-        </div>
-        <div className="relative z-0 mt-4">
-          <input
-            type="email"
-            id="standard_success"
-            aria-describedby="standard_success_help"
-            className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 
-            border-b-2  appearance-none dark:text-white dark:border-[#FD9A3E] border-[#FD9A3E]
-           dark:focus:border-[#FD9A3E] focus:outline-none focus:ring-0 focus:border-[#FD9A3E] peer"
-            placeholder=" "
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <label
-            htmlFor="standard_success"
-            className="absolute text-sm text-[#FD9A3E] dark:text-[#FD9A3E] duration-300 transform 
-            -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 
-            peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto"
-          >
-            Email
-          </label>
-        </div>
-        <div className="relative z-0 mt-4 mb-4 ">
-          <textarea
-            id="standard_success"
-            aria-describedby="standard_success_help"
-            className="block py-2.5 px-0 w-full  text-sm text-white bg-transparent border-0 
-            border-b-2  appearance-none dark:text-white dark:border-[#FD9A3E] border-[#FD9A3E]
-           dark:focus:border-[#FD9A3E] focus:outline-none focus:ring-0 focus:border-[#FD9A3E] peer"
-            placeholder=" "
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          />
-          <label
-            htmlFor="standard_success"
-            className="absolute text-sm  text-[#FD9A3E] focus:dark:text-[#FD9A3E] duration-300 transform 
-            -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 
-            peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto "
-          >
-            Message
-          </label>
-        </div>
-        <motion.button
-          whileFocus={{ backgroundColor: "#FD9A3E" }}
-          whileHover={{ backgroundColor: "#FDB13E" }}
-          whileTap={{ backgroundColor: "#FFE8C5" }}
-          className="flex justify-center items-center gap-3 rounded-2xl bg-[#FD9A3E] py-[10px] px-[25px]
-            text-xl font-bold leading-normal max-2xl:text-xs max-2xl:px-[25px] max-2xl:rounded-xl"
+        <form
+          action=""
+          className="bg-[#27272a] border-2 rounded-lg px-10 py-14"
+          onSubmit={handleSubmit}
         >
-          Submit
-          <Toaster />
-        </motion.button>
-      </form>
+          <div className="relative z-0 ">
+            <input
+              type="text"
+              id="standard_success"
+              aria-describedby="standard_success_help"
+              className="block py-2.5 px-0 w-[300px] text-sm text-white bg-transparent  
+            border-b-2  appearance-none dark:text-white dark:border-white border-white
+           dark:focus:border-white focus:outline-none focus:ring-0 focus:border-white peer"
+              placeholder=" "
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <label
+              htmlFor="standard_success"
+              className="absolute text-sm text-white dark:text-white duration-300 transform 
+            -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 
+            peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto"
+            >
+              Name
+            </label>
+          </div>
+          <div className="relative z-0 mt-4">
+            <input
+              type="email"
+              id="standard_success"
+              aria-describedby="standard_success_help"
+              className="block py-2.5 px-0 w-[300px] text-sm text-white bg-transparent  
+            border-b-2  appearance-none dark:text-white dark:border-white border-white
+           dark:focus:border-white focus:outline-none focus:ring-0 focus:border-white peer"
+              placeholder=" "
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <label
+              htmlFor="standard_success"
+              className="absolute text-sm text-white dark:text-white duration-300 transform 
+              -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 
+              peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto"
+            >
+              Email
+            </label>
+          </div>
+          <div className="relative z-0 mt-4 mb-10 ">
+            <textarea
+              id="standard_success"
+              aria-describedby="standard_success_help"
+              className="block py-2.5 px-0 w-[300px] text-sm text-white bg-transparent  
+            border-b-2  appearance-none dark:text-white dark:border-white border-white
+           dark:focus:border-white focus:outline-none focus:ring-0 focus:border-white peer"
+              placeholder=" "
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
+            <label
+              htmlFor="standard_success"
+              className="absolute text-sm text-white dark:text-white duration-300 transform 
+              -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 
+              peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto"
+            >
+              Message
+            </label>
+          </div>
+          <motion.button
+            whileFocus={{ backgroundColor: "#FD9A3E" }}
+            whileHover={{ backgroundColor: "#FDB13E" }}
+            whileTap={{ backgroundColor: "#FFE8C5" }}
+            className="flex justify-center items-center gap-3 rounded-2xl bg-[#FD9A3E] py-[10px] px-[25px]
+            text-xl font-bold leading-normal max-2xl:text-xs max-2xl:px-[25px] max-2xl:rounded-xl"
+          >
+            Submit
+            <Toaster />
+          </motion.button>
+        </form>
       </div>
-      
-        </div>
-      
-    
+    </div>
   );
 };
 

@@ -96,7 +96,7 @@ const SosialMedia = () => {
           whileTap={{ scale: 0.9 }}
           transition={{ type: "spring", stiffness: 400, damping: 17 }}>
             <motion.a
-              href="https://www.facebook.com/yorn.omega" target="_blank"
+              href="https://www.facebook.com/yorn.omega?mibextid=ZbWKwL" target="_blank"
               variants={variants}
               initial="initial"
               whileInView="animate"
