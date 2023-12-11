@@ -54,7 +54,7 @@ const Form: NextPage = () => {
       <div>
         <form
           action=""
-          className="bg-[#27272a] border-2 rounded-lg px-10 py-14"
+          className="bg-[#27272a] border-2 rounded-lg px-10 py-14 max-sm:mr-7"
           onSubmit={handleSubmit}
         >
           <div >
@@ -127,7 +127,7 @@ const Form: NextPage = () => {
             whileHover={{ backgroundColor: "#FDB13E" }}
             whileTap={{ backgroundColor: "#FFE8C5" }}
             className="flex justify-center items-center gap-3 rounded-2xl bg-[#FD9A3E] py-[10px] px-[25px]
-            text-xl font-bold leading-normal max-2xl:text-xs max-2xl:px-[25px] max-2xl:rounded-xl ml-20"
+            text-xl font-bold leading-normal max-2xl:text-xs max-2xl:px-[25px] max-2xl:rounded-xl ml-20 max-sm:ml-24"
           >
             Submit
             <Toaster />
