@@ -13,7 +13,7 @@ const Form: NextPage = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!name || !email || !message) {
-      toast.error("Mohon lengkapi semua kolom formulir!");
+      toast.error("Mohon lengkapi formulir!");
       return;
     }
 
@@ -24,7 +24,7 @@ const Form: NextPage = () => {
         Message: message,
       };
       if (!formData.Name || !formData.Email || !formData.Message) {
-        toast.error("Mohon lengkapi semua kolom formulir!");
+        toast.error("Mohon lengkapi formulir!");
         return;
       }
 
@@ -123,11 +123,12 @@ const Form: NextPage = () => {
           </div>
           
           <motion.button
-            whileFocus={{ backgroundColor: "#FD9A3E" }}
+            whileFocus={{color: "#FD9A3E"}}
             whileHover={{ backgroundColor: "#FDB13E" }}
             whileTap={{ backgroundColor: "#FFE8C5" }}
-            className="flex justify-center items-center gap-3 rounded-2xl bg-[#FD9A3E] py-[10px] px-[25px]
-            text-xl font-bold leading-normal max-2xl:text-xs max-2xl:px-[25px] max-2xl:rounded-xl ml-20 max-sm:ml-24"
+            className="flex justify-center items-center gap-3 rounded-xl bg-transparent py-[10px] px-[25px] border-[#FD9A3E] border-[1px] text-[#FD9A3E]
+             hover:text-white transition duration-300
+            text-xl font-semibold leading-normal max-2xl:text-xs max-2xl:px-[25px] max-2xl:rounded-xl ml-20 max-sm:ml-24"
           >
             Submit
             <Toaster />
