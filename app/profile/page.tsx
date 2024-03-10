@@ -81,7 +81,7 @@ const Profile = () => {
                 </span>
               </h1>
               <p className="text-base font-light text-[#BFBFBF] mt-2 max-2xl:text-xs max-sm:text-xs">
-              Saya saat ini tengah menjalani magang di Atech Solution selama dua bulan terakhir, 
+              Saya saat ini tengah menjalani magang di perusahaan Atech Solution selama dua bulan terakhir, 
               di mana saya aktif dalam proyek pengembangan web backend<br /> menggunakan teknologi PHP dan Laravel.  Selama periode ini, 
               saya berkontribusi dalam lingkungan kerja yang dinamis.
               Saya telah terlibat dalam tugas-tugas yang mencakup pengembangan dan  pemeliharaan backend sistem web, 
