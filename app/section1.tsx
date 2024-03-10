@@ -77,7 +77,7 @@ function section1() {
           <span className="">
             <Typewriter
               options={{
-                strings: ["FRONT-END DEVELOPER"],
+                strings: ["FRONTEND DEVELOPER","BACKEND DEVELOPER"],
                 autoStart: true,
                 loop: true,
               }}

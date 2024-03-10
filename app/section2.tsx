@@ -31,7 +31,7 @@ const Section2 = () => {
         <div>
           <h1 className="text-5xl font-extrabold leading-normal max-2xl:text-4xl max-sm:text-2xl">
             {" "}
-            Membuat website modern <br /> dan interaktif
+            Membuat website modern dan interaktif
           </h1>
           <p className="text-base font-normal text-gray-600 mb-6 mt-6 max-sm:mb-3 max-sm:mt-3">
             Membuat bisnis web Anda lebih fungsional
@@ -50,7 +50,6 @@ const Section2 = () => {
             once: true,
           }}
         ><button><Link href="/profile"><p>Tentang Saya</p></Link></button>
-          
         </motion.div>
         </div>
       </motion.div>

@@ -5,13 +5,9 @@ import facebookSosmed from "../assets/logo/facebookSosmed.svg";
 import Image from "next/image";
 Image;
 import styles from "./styles.module.css";
-import { useState } from "react";
 import { motion } from "framer-motion";
 
 const SosialMedia = () => {
-  const [effect, setEffect] = useState(false);
-  const [effectIns, setEffectIns] = useState(false);
-  const [effectFace, setEffectFace] = useState(false);
 
   const variants = {
     initial: {
@@ -25,7 +21,7 @@ const SosialMedia = () => {
   };
 
   return (
-    <section className="max-sm:mt-[50rem] flex flex-col justify-center items-center pt-10 text-white max-2xl:mt-20 max-lg:mt-40">
+    <section className="max-sm:mt-[70rem] flex flex-col justify-center items-center pt-10 text-white max-2xl:mt-20 max-lg:mt-40 ">
       <motion.div
         className="mb-10"
         initial={{ opacity: 0 }}
@@ -67,9 +63,6 @@ const SosialMedia = () => {
               <Image
                 src={linkediSosmed}
                 alt=""
-                onClick={() => {
-                  setEffect(true);
-                }}
               />
             </motion.a>
           </motion.div>

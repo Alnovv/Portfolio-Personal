@@ -37,7 +37,7 @@ const Portfolio = () => {
           <div>
             <div className="z-50  max-sm:mb-14">
               <h1 className="text-8xl max-2xl:text-6xl max-sm:text-5xl font-extrabold ">
-                Pro<span className=" absolute z-20 ">j</span> ects
+                Pro<span className=" absolute z-20 ">j</span>    ects
               </h1>
               <div
                 className={`h-[8px] max-sm:h-[3px] bg-[#FD9A3E] ${styles.animateprojects} `}

@@ -18,7 +18,7 @@ const WaAndEmail = () => {
   };
   const [showContentWA, setShowContentWA] = useState(false);
 
-  const handleWAClick = () => {
+  const handleWAClick: React.MouseEventHandler = () => {
     setShowContent(false);
     setShowContentWA((prevShowContentWA) => !prevShowContentWA);
   };
@@ -79,7 +79,7 @@ const WaAndEmail = () => {
                   showContentWA ? "opacity-0" : "opacity-100"
                 }`}
               >
-                <Image src={wa} alt="" />
+                <Image src={wa} alt="" className="max-sm:w-[50px] w-12 " />
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: -100 }}

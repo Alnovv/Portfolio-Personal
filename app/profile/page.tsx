@@ -21,29 +21,29 @@ Link;
 const Profile = () => {
   return (
     <>
-      <section className="flex flex-col justify-center items-center min-h-screen text-white z-10 max-lg:min-h-[50vh]">
+      <section className=" flex flex-col justify-center items-center min-h-screen text-white z-10 max-lg:min-h-[50vh]">
         <div className="flex items-center justify-center max-sm:justify-start max-sm:items-start max-sm:flex-col ">
           <div
-            className=" absolute left-[480px] top-48 max-2xl:left-48 max-2xl:top-52 max-lg:left-5 max-lg:top-42
+            className=" absolute left-[480px]  max-2xl:left-48  max-lg:left-5 max-lg:top-42
           max-sm:top-28 max-sm:left-24"
           >
             <Image
               src={wall}
               alt=""
-              className="w-[50vw] max-sm:w-[65vw] -z-10"
+              className="w-[40vw] max-sm:w-[65vw] -z-10"
             />
           </div>
           <div className=" absolute right-0 top-0 max-2xl:right-0 max-2xl:top-0 max-sm:right-0 max-sm:top-80 max-lg:top-40 ">
             <Image
               src={Vec}
               alt=""
-              className="w-[80vw] max-2xl:w-[90vw]  -z-10"
+              className="w-[85vw]  -z-10"
             />
           </div>
           <div className="absolute left-[410px] max-2xl:left-36 max-sm:left-20 max-sm:top-20 max-lg:left-1 max-lg:top-40">
-            <Image src={ranov} alt="" className=" w-[45vw] max-sm:w-[60vw] " />
+            <Image src={ranov} alt="" className=" w-[36vw] max-sm:w-[60vw] " />
           </div>
-          <div className="z-20 absolute left-[60%] max-2xl:left-[50%] max-sm:left-0  max-sm:top-[50%] max-sm:ml-5 max-lg:top-[25%] max-lg:left-[40%]">
+          <div className="z-20 absolute left-[50%] max-2xl:left-[50%] max-sm:left-0  max-sm:top-[50%] max-sm:ml-5 max-lg:top-[25%] max-lg:left-[40%]">
             <motion.div
               className="flex flex-col justify-center absolute -top-60 max-2xl:-top-32 ml-14 max-2xl:ml-0 max-sm:-top-5"
               initial={{ opacity: 0, y: -100 }}
@@ -54,7 +54,7 @@ const Profile = () => {
               }}
             >
               <h1 className="text-8xl max-2xl:text-6xl max-sm:text-4xl max-lg:text-4xl font-extrabold">
-                About
+                Tentang Saya
               </h1>
               <div
                 className={`h-[8px] max-sm:h-1 max-lg:h-1 bg-[#FD9A3E] ${styles.animateabout}`}
@@ -73,7 +73,7 @@ const Profile = () => {
                 <span>
                   <Typewriter
                     options={{
-                      strings: ["FRONT-END DEVELOPER"],
+                      strings: ["FRONTEND DEVELOPER","BACKEND DEVELOPER"],
                       autoStart: true,
                       loop: true,
                     }}
@@ -81,15 +81,13 @@ const Profile = () => {
                 </span>
               </h1>
               <p className="text-base font-light text-[#BFBFBF] mt-2 max-2xl:text-xs max-sm:text-xs">
-                Saat ini, saya sedang fokus dalam belajar pengembangan frontend.
-                Saya telah menguasai konsep-konsep <br />
-                dasar HTML, CSS, JavaScript, dan Framework lainnya. Selama
-                perjalanan belajar saya, saya juga telah membuat <br /> beberapa
-                proyek kecil seperti pembuatan halaman web sederhana dan
-                aplikasi kecil menggunakan teknologi-teknologi ini. Meskipun
-                belum memiliki pengalaman kerja resmi, saya berkomitmen untuk
-                terus belajar dan mengembangkan kemampuan <br /> saya di bidang
-                ini.
+              Saya saat ini tengah menjalani magang di Atech Solution selama dua bulan terakhir, 
+              di mana saya aktif dalam proyek pengembangan web backend<br /> menggunakan teknologi PHP dan Laravel.  Selama periode ini, 
+              saya berkontribusi dalam lingkungan kerja yang dinamis.
+              Saya telah terlibat dalam tugas-tugas yang mencakup pengembangan dan  pemeliharaan backend sistem web, 
+              meningkatkan pemahaman saya terhadap teknologi dalam industri ini. 
+              Pengalaman ini memberi saya wawasan yang berharga tentang praktik terbaik dalam pengembangan 
+              web dan memperluas keterampilan teknis saya di bidang ini.
               </p>
             </motion.div>
             <motion.div
@@ -156,7 +154,7 @@ const Profile = () => {
             alt=""
             className="w-full h-full object-cover -z-20"
           />
-          <div className="absolute top-0 left-0 w-full h-full z-10 bg-gradient-to-b from-transparent via-transparent to-[#020611]"></div>
+          <div className="absolute top-0 left-0 w-full  z-10 bg-gradient-to-t from-[#020611] via-transparent to-transparent h-screen"></div>
         </div>
       <Footer />
     </>

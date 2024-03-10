@@ -51,7 +51,6 @@ const Navigation = () => {
             <Link
               href="/profile" 
               className={`ml-3 cursor-pointer hover:text-[#FD9A3E] transition-all duration-300 ${active === 1 ? 'text-[#FD9A3E] ' : ''}`}
-
               onClick={() => setActive(1)}
             >
               <li>Profile </li>{" "}

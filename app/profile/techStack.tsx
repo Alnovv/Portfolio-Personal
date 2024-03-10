@@ -15,7 +15,7 @@ function TechStack() {
         once:true
       }}
       >
-        <h1 className="text-5xl font-extrabold leading-normal text-white mb-5 max-2xl:text-3xl max-sm:mt-36 max-sm:text-align">TECH STACK</h1>
+        <h1 className="text-5xl font-extrabold leading-normal text-white mb-5 max-2xl:text-3xl max-sm:mt-36 max-sm:text-align max-sm:text-lg">Teknologi saya kenal</h1>
         <p className="text-[#010611]">wkwkwk</p>
       </motion.div>
       <StackLogo />
