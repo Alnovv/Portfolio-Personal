@@ -73,7 +73,7 @@ const Profile = () => {
                 <span>
                   <Typewriter
                     options={{
-                      strings: ["FRONTEND DEVELOPER","BACKEND DEVELOPER"],
+                      strings: ["FRONTEND DEVELOPER"],
                       autoStart: true,
                       loop: true,
                     }}

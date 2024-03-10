@@ -1,11 +1,11 @@
 .gradient{
-    background: linear-gradient(180deg, rgba(255, 107, 0, 0.49) 0%, rgba(0, 0, 0, 0.844) 60%);
+    background: linear-gradient(180deg, rgba(255, 107, 0, 0.49) 0%, rgba(0, 0, 0, 0.844) 100%);
 }
 .gradientSosmed{
   background: linear-gradient(180deg, rgba(255, 107, 0, 0.15) 31.13%, rgba(54, 29, 10, 0.19) 100%);
 }
 @keyframes about {
-  0%,100% {
+  0% {
     width: 15%;
     transform-origin: left;
     transform: scaleX(1);
@@ -14,7 +14,7 @@
     width: 15%;
     transform: scaleX(7);
   }
-  80% {
+  60% {
     width: 15%; 
     transform: scaleX(12);
   }
