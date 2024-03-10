@@ -1,14 +1,14 @@
-import HTML from "../assets/logo/html.svg";
-import CSSlogo from "../assets/logo/css.svg";
-import javaScript from "../assets/logo/js.svg";
+import HTML from "../assets/logo-tech/html.png";
+import CSSlogo from "../assets/logo-tech/css.png";
+import javaScript from "../assets/logo-tech/js.png";
 import styles from "./styles.module.css";
-import Bootstrap from "../assets/logo/bootstrap.svg";
-import Reactlogo from "../assets/logo/react.svg";
-import TailwindCSS from "../assets/logo/tailwind.svg";
-import next from "../assets/logo/next-js.svg";
-import vite from "../assets/logo/vite.svg";
-import php from "../assets/logo/php.svg";
-import laravel from "../assets/logo/laravel.svg";
+import Bootstrap from "../assets/logo-tech/bootstrap.png";
+import Reactlogo from "../assets/logo-tech/react.png";
+import TailwindCSS from "../assets/logo-tech/tailwind.png";
+import next from "../assets/logo-tech/next-js.png";
+import vite from "../assets/logo-tech/vite.png";
+import php from "../assets/logo-tech/php.png";
+import laravel from "../assets/logo-tech/laravel.png";
 
 
 import { motion } from "framer-motion";
