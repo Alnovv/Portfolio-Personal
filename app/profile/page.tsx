@@ -84,7 +84,7 @@ const Profile = () => {
               Saya saat ini tengah menjalani magang di perusahaan Atech Solution selama dua bulan terakhir, 
               di mana saya aktif dalam proyek pengembangan web backend<br /> menggunakan teknologi PHP dan Laravel.  Selama periode ini, 
               saya berkontribusi dalam lingkungan kerja yang dinamis.
-              Saya telah terlibat dalam tugas-tugas yang mencakup pengembangan dan  pemeliharaan backend sistem web, 
+              Saya telah terlibat dalam tugas-tugas yang mencakup pengembangan backend sistem web, 
               meningkatkan pemahaman saya terhadap teknologi dalam industri ini. 
               Pengalaman ini memberi saya wawasan yang berharga tentang praktik terbaik dalam pengembangan 
               web dan memperluas keterampilan teknis saya di bidang ini.
